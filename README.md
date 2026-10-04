@@ -1,5 +1,12 @@
 # MoErgo Glove80 Custom Configuration for ZMK
 
+This is my modified version of darknao's repo.
+For Emacs use, when I toggle to Layer 3 the F3 key lights up RED.
+When I momentarily toggle to Layer 4 the F4 key lights up only as long as I have the Layer 4 key pressed.
+
+Sun Oct  4 21:49:51 AEDT 2026
+
+
 This configuration uses a [custom ZMK firmware](https://github.com/darknao/zmk/tree/darknao/rgb-layer-24.12) that includes per layer / per key RGB underglow, based on @valdur [mod](https://github.com/moergo-sc/zmk/compare/main...valdur:zmk-glove80:valdur-stuff).
 
 
