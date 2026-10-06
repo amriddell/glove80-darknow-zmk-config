@@ -10,6 +10,10 @@
  *
  * This file was generated automatically. You may or may not want to
  * edit it directly.
+ *
+ *
+ * DLM: This is working now Sun Oct  4 21:49:51 AEDT 2026
+ *      This has to be processed through the GitHub repo.
  */
 
 #include <behaviors.dtsi>
@@ -557,11 +561,11 @@ behaviors {
         layer_Base {
             bindings = <
        &kp ESC      &kp F2         &kp F3         &kp F4  &magic LAYER_Magic 0                                                                                              &kp C_VOL_UP         &kp C_VOL_DN            &none              &none  &magic LAYER_Magic 0
-       &kp ESC      &kp N1         &kp N2         &kp N3                &kp N4       &kp N5                                                                         &kp N6        &kp N7               &kp N8           &kp N9             &kp N0             &kp GRAVE
-       &kp TAB  &as LS(Q)Q    &as LS(W) W    &as  LS(E)E          &as LS( R )R  &as LS(T) T                                                                    &as LS(Y) Y   &as LS(U) U          &as LS(I) I       &as LS(O)O      &as LS( P ) P  &kp LS(SINGLE_QUOTE)
-      &kp LGUI  &as LS(A)A     &as LS(S)S     &as LS(D)D            &as LS(F)F   &as LS(G)G                                                                     &as LS(H)H   &as LS(J) J          &as LS(K) K      &as LS(L) L           &kp SEMI               &kp SQT
-     &kp LSHFT  &as LS(Z)Z    &as LS(X) X   &as LS( C) C           &as LS(V) V  &as LS(B) B  &kp LCTRL   &kp TAB  &kp C_MUTE  &kp LC(C)  &kp RCTRL    &kp RET  &as LS(N) N   &as LS(M) M  &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as LS(FSLH) FSLH                 &none
- &kp LG(LS(U))   &TogEmacs  &kp LG(MINUS)  &kp LG(EQUAL)                 &none                  &lower  &kp LALT   &kp LCTRL    &kp DEL   &kp BSPC  &kp SPACE                   &kp LGUI               &kp UP         &kp DOWN           &kp LEFT             &kp RIGHT
+       &kp ESC      &kp N1         &kp N2         &kp N3  &kp N4       &kp N5                                                                         &kp N6        &kp N7               &kp N8           &kp N9             &kp N0             &kp GRAVE
+       &kp TAB  &as LS(Q)Q    &as LS(W) W    &as  LS(E)E  &as LS( R )R &as LS(T) T                                                                    &as LS(Y) Y   &as LS(U) U          &as LS(I) I       &as LS(O)O      &as LS( P ) P  &kp LS(SINGLE_QUOTE)
+      &kp LGUI  &as LS(A)A     &as LS(S)S     &as LS(D)D  &as LS(F)F   &as LS(G)G                                                                     &as LS(H)H   &as LS(J) J          &as LS(K) K      &as LS(L) L           &kp SEMI               &kp SQT
+     &kp LSHFT  &as LS(Z)Z    &as LS(X) X   &as LS( C) C  &as LS(V) V  &as LS(B) B  &kp LGUI   &kp LCTRL  &kp C_MUTE  &kp LC(C)  &kp RCTRL    &kp RET  &as LS(N) N   &as LS(M) M  &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as LS(FSLH) FSLH                 &none
+ &kp LG(LS(U))   &TogEmacs  &kp LG(MINUS)  &kp LG(EQUAL)  &none        &lower  &kp LALT   &kp LCTRL                   &kp DEL   &kp BSPC  &kp SPACE                   &kp LGUI               &kp UP         &kp DOWN           &kp LEFT             &kp RIGHT
             >;
         };
 
