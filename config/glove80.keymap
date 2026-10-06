@@ -122,8 +122,8 @@
             bindings = <
                 &ug ___ &ug ___ &ug 0xFF0000 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                      &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+               &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                      &ug ___ &ug ___ &ug 0xFF0000 &ug ___ &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 >;
