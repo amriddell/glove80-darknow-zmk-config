@@ -608,7 +608,7 @@ behaviors {
   &none  &kp LS(N1)      &kp LS(N2)      &kp LS(N3)       &kp LS(N4)     &kp LS(N5)                                                           &kp LS(N6)     &kp LS(N7)    &kp LS(N8)  &kp LS(EQUAL)  &kp LS(GRAVE)  &kp GRAVE
   &none       &none         &kp END    &kp UP_ARROW         &kp HOME          &none                                                             &kp FSLH   &kp LS(LBKT)  &kp LS(RBKT)      &kp EQUAL     &kp LS(N5)      &none
   &none       &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp MINUS                                                         &kp LS(BSLH)     &kp LS(N9)    &kp LS(N0)     &kp LS(N4)  &kp LS(EQUAL)  &kp MINUS
-  &none       &none       &kp PG_DN           &none        &kp PG_UP  &kp LS(MINUS)   &none   &none   &none   &none      &none       &none      &kp BSLH       &kp LBKT      &kp RBKT        &kp SQT   &kp LS(FSLH)      &none
+  &none       &none       &kp PG_DN           &none        &kp PG_UP  &kp LS(MINUS)   &none   &none   &none   &none      &none       &kp LGUI      &kp BSLH       &kp LBKT      &kp RBKT        &kp SQT   &kp LS(FSLH)      &none
   &none       &none           &none           &none            &none                 &trans   &none   &none   &none  &kp LCTRL  &FlashEval                &kp LS(COMMA)   &kp LS(DOT)          &none         &kp UP   &kp DOWN
             >;
         };
