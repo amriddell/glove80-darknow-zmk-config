@@ -12,8 +12,9 @@
  * edit it directly.
  *
  *
- * DLM: This is working now Sun Oct  4 21:49:51 AEDT 2026
- *      This has to be processed through the GitHub repo.
+ * DLM: This is working now Thu Oct 22 21:34:18 AEDT 2026
+ *      This has to be processed through the GitHub Repo.
+ *      SmartParens modes in this version
  */
 
 #include <behaviors.dtsi>
@@ -72,6 +73,7 @@
 #define LAYER_Magic 2
 #define LAYER_Extempore 3
 #define LAYER_L_Extempore 4
+#define LAYER_L_SmartParens 5
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
@@ -142,7 +144,18 @@
 
             layer-id = <LAYER_L_Extempore>;
         };
-        // Add more RGB :wait-mslayers here
+        L_SmartParens {
+            bindings = <
+                &ug ___ &ug ___ &ug 0xFF0000   &ug 0xFF0000 &ug ___ &ug ___ &ug 0xFF0000 &ug 0xFF0000 &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                >;
+
+            layer-id = <LAYER_L_Extempore>;
+        };        // Add more RGB :wait-mslayers here
     };
 };
 
@@ -608,8 +621,19 @@ behaviors {
   &none  &kp LS(N1)      &kp LS(N2)      &kp LS(N3)       &kp LS(N4)     &kp LS(N5)                                                           &kp LS(N6)     &kp LS(N7)    &kp LS(N8)  &kp LS(EQUAL)  &kp LS(GRAVE)  &kp GRAVE
   &none       &none         &kp END    &kp UP_ARROW         &kp HOME          &none                                                             &kp FSLH   &kp LS(LBKT)  &kp LS(RBKT)      &kp EQUAL     &kp LS(N5)      &none
   &none       &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp MINUS                                                         &kp LS(BSLH)     &kp LS(N9)    &kp LS(N0)     &kp LS(N4)  &kp LS(EQUAL)  &kp MINUS
-  &none       &none       &kp PG_DN           &none        &kp PG_UP  &kp LS(MINUS)   &none   &none   &none   &none      &none       &kp LGUI      &kp BSLH       &kp LBKT      &kp RBKT        &kp SQT   &kp LS(FSLH)      &none
-  &none       &none           &none           &none            &none                 &trans   &none   &none   &none  &kp LCTRL  &FlashEval                &kp LS(COMMA)   &kp LS(DOT)          &none         &kp UP   &kp DOWN
+  &none       &none       &kp PG_DN           &none        &kp PG_UP  &kp LS(MINUS)   &none   &none   &none   &none      &none       &kp RGUI      &kp BSLH       &kp LBKT      &kp RBKT        &kp SQT   &kp LS(FSLH)      &none
+  &none       &none           &none           &none            &none                 &trans   &none   &none   &none   &lower  &FlashEval                &kp LS(COMMA)   &kp LS(DOT)          &none         &kp UP   &kp DOWN
+            >;
+        };
+
+        layer_L_SmartParens {
+            bindings = <
+  &none   &none   &none              &none          &none                                                                             &none   &none   &none   &none   &none
+  &none   &none   &none  &kp LC(LA(RIGHT))   &kp LC(LEFT)             &none                                                   &none   &none   &none   &none   &none   &none
+  &none   &none   &none   &kp LC(LA(LEFT))  &kp LC(RIGHT)  &kp LA(LG(DOWN))                                                   &none   &none   &none   &none   &none   &none
+  &none   &none   &none      &kp LC(LA(B))  &kp LC(LA(F))      &kp LA(BSPC)                                                   &none   &none   &none   &none   &none   &none
+  &none   &none   &none      &kp LC(LG(D))  &kp LC(LG(A))             &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+  &none   &none   &none              &none          &none                     &none   &none   &none   &none   &none   &none           &none   &none   &none   &none   &none
             >;
         };
 
